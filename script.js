@@ -21,7 +21,7 @@ function inputNum(){
 function calcNum(num1,num2) {
     
     //referenciando os elementos html e trocando seu conteudo para os cálculos
-    document.getElementById("sum").innerHTML = ` <style="color:red;">${num1} + ${num2} = ${num1 + num2}`;
+    document.getElementById("sum").innerHTML = `${num1} + ${num2} = ${num1 + num2}`;
     document.getElementById("sub").innerHTML = `${num1} - ${num2} = ${num1 - num2}`;
     document.getElementById("multi").innerHTML = `${num1} * ${num2} = ${num1 * num2}`;
     document.getElementById("divis").innerHTML = `${num1} / ${num2} = ${num1 / num2}`;
@@ -29,5 +29,6 @@ function calcNum(num1,num2) {
 
 };
 
+//adicionando um ouvinte de eventos para que quando o botão for clicado (click) ele chame a função de importar os números
 const btcal = document.getElementById("btcal");
 btcal.addEventListener("click", inputNum);
